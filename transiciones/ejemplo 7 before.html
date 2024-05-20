@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .enlace{
+            position: relative;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        .izquierda::after{
+            position: absolute;
+            content: "";
+            background-color: black;
+            height: 2px;
+            width: 0;
+            bottom: 0;
+            left: 0;
+            transition: all 0.4s ease;
+        }
+
+        .izquierda:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="menuCentrado">
+        <a href="" class="enlace prueba">Enlace 1</a>
+        <a href="" class="enlace izquierda">Enlace 2</a>
+        <a href="" class="enlace derecha">Enlace 3</a>
+        <a href="" class="enlace centro">Enlace 4</a>
+    </div>
+</body>
+</html>

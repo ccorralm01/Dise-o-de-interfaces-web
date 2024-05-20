@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta{
+            width: 200px;
+            height: 200px;
+            padding: 15px;
+            margin: 5px;
+            background-color: gray;
+        }
+
+        .caja{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            background-color: #ddd;
+            cursor: pointer;
+        }
+        .cajaPerspect{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            background-color: #ddd;
+            cursor: pointer;
+            perspective: 500px;
+        }
+
+        .relleno{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            background-color: tomato;
+            opacity: 0.5;
+            transition: 0.5s;
+        }
+
+        .rellenoOrigin{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            background-color: tomato;
+            opacity: 0.5;
+            transition: 0.5s;
+            transform-origin: right top;
+        }
+
+        p{
+            margin: 25px 0 0;
+            width: 100%;
+            text-align: center;;
+        }
+
+        .translate:hover{
+            transform: translateX(-50px);
+        }
+
+        .scale:hover{
+            transform: scale(2);
+        }
+
+        .rotate45:hover{
+            transform: rotate(45deg);
+        }
+
+        .rotate180:hover{
+            transform: rotate(180deg);
+        }
+
+        .skew:hover{
+            transform: skew(0deg, 45deg);
+        }
+
+        .perspectiva:hover{
+            transform: translateZ(100px);
+        }
+
+        .mix:hover{
+            transform: scale(2) rotatex(180deg);
+        }
+
+        .transformorigin:hover{
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno translate"></div>
+            </div>
+            <p>translate</p>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno scale"></div>
+            </div>
+            <p>scale</p>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno rotate45"></div>
+            </div>
+            <p>rotate45</p>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno rotate180"></div>
+            </div>
+            <p>rotate180</p>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno skew"></div>
+            </div>
+            <p>skew</p>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="tarjeta">
+            <div class="cajaPerspect">
+                <div class="relleno perspectiva"></div>
+            </div>
+            <p>perspectiva</p>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno mix"></div>
+            </div>
+            <p>mix</p>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="rellenoOrigin transformorigin"></div>
+            </div>
+            <p>transformorigin</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .bloque{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .bloque1{
+            animation-name: cambioColor;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: both;
+        }
+
+        @keyframes cambioColor {
+            0%, 100%{
+                background-color: red;
+                background-image: url("https://picsum.photos/id/684/600/400");
+            }
+            25%{
+                background-color: green;
+                background-image: url("https://picsum.photos/id/684/600/400?blur=5");
+                
+            }
+            50%{
+                background-color: yellow;
+                background-image: url("https://picsum.photos/id/945/600/400");
+            }
+
+            75%{
+                background-color: rosybrown;
+                background-image: url("https://picsum.photos/id/112/600/400");
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="bloque bloque1"></div>
+    </div>
+</body>
+</html>

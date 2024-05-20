@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .grid_container{
+            display: grid;
+            /* grid-template-columns: 20vh 30vh 50vh;
+            grid-template-rows: 200px 300px; */
+            /* grid-template-columns: 1fr 1.5fr 2fr;
+            grid-template-rows: 2fr 1fr; */
+            grid-template-columns: 33vw 33vw 33vw;
+            grid-template-rows: 33vw 33vw 33vw;
+        }
+
+        .grid-item{
+            border: 1px solid black;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .uno{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .dos{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .cinco{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="grid-item uno">1</div>
+        <div class="grid-item dos">2</div>
+        <div class="grid-item tres">3</div>
+        <div class="grid-item cuatro">4</div>
+        <div class="grid-item cinco">5</div>
+    </div>
+</body>
+</html>

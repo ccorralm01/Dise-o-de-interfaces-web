@@ -1,0 +1,771 @@
+/* CONFIGURACION DE LA PÁGINA GENERAL */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: #f7f7f7f7;
+        overflow-x: hidden;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+/*-------------------------------------------*/
+
+@font-face {
+    font-family: Titulos;
+    src: url(../Fuentes/Associate.Sans.Titulos/AssociateSansMedium.otf);
+}
+
+@font-face {
+    font-family: Textos;
+    src: url(../Fuentes/Clobber.Grotesk.Textos/ClobberGrotesk-Light.ttf);
+}
+
+/*CABECERA PÁGINA WEB*/
+
+    /* CAJA QUE ALMACENA TODA LA CABECERA*/
+    .cabecera{
+        font-family: Titulos;
+        width: 100vw;
+        top: 0;
+        z-index: 3;
+        position: sticky;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        height: 70px;
+    }
+
+    /* CAJA QUE CONTIENE EL LOGO DE LA PÁGINA */
+    .cajaLogoXiaomi{
+        flex-grow: 1;
+    }
+
+    /*LOGO DE LA PÁGINA*/
+    .logoXiaomi{
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+    }
+
+    /* CAJA QUE CONTIENE TODOS LOS ENLACES Y LA IMAGEN DE LA PARTE DERECHA DE LA CABECERA */
+    .enlacesCabecera{
+        display: flex;
+        align-items: center;
+    }
+
+    /*ENLACE HOME*/
+    .home{
+        font-weight: bold;
+    }
+
+    /*CAJA QUE CONTIENE LOS ENLACES DE CABECERA*/
+    .enlace{
+        padding: 22px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    /* ENLACES DE CABECERA */
+    .enlace a, .enlace .nuevos{
+        color: gray;
+    }
+
+    /*EFECTO DE LINEA NARANJA AL HACER HOVER*/
+    .enlace:hover{
+        text-decoration: none;
+        border-bottom: 4px solid orange;
+    }
+
+    /* CAJA CON ANCLAS OCULTA EN CABECERA*/
+    .cajaOcultaMoviles{
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        height: 0px;
+        width: 100vw;
+        background-color: #f7f7f7f7;
+        visibility: hidden;     
+    }
+
+    /* CADA CAJA INDIVIDUAL POR ANCLA*/
+    .cajaOcultaMoviles div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px;
+        height: 45px;
+        width: 160px;
+        
+    }
+
+    /* ANCLAS DE CABECERA PARA MOVERSE POR LA PÁGINA*/
+    .cajaOcultaMoviles a{
+        color: black;
+        font-size: 40px;
+        margin: auto;
+    }
+
+    /* AUMENTO DE PADDING PARA QUE QUEDE BIEN EL HOVER*/
+    .nuevos{
+        padding-bottom: 20%;
+    }
+
+    /* APARICION DE LAS ANCLAS HACIENDO EL HOVER SOBRE LAS CAJAS DE CABECERA */
+    .cajaNuevos:hover .cajaOcultaMoviles{
+        visibility: visible;
+        transition: 0.7s;
+        height: 150px;
+    }
+
+    /*IMAGEN DE SESION*/
+    .imgSesion{
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-right: 10px;
+    }
+
+    /*DESPLEGABLE DE SESION*/
+    .cajaOcultaSesion{
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 3.1em;
+        right: 1em;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    /* CAJAS DE INICIO Y REGISTRO*/
+    .cajaOcultaSesion div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.1px solid gray;
+        margin: 0.1px;
+        height: 45px;
+        width: 160px;
+        background-color: #f7f7f7f7;
+    }
+
+    .registro{
+        border-radius: 5px 5px 0px 0px; 
+    }
+
+    .inicio{
+        border-radius: 0px 0px 5px 5px; 
+    }
+
+    /* ENLACES DE CAJAS DE INICIO Y REGISTRO */
+    .cajaOcultaSesion a{
+        color: gray;
+    }
+
+    /* EFECTO CAMBIO DE COLOR EN ENLACES DE CAJAS DE INICIO Y REGISTRO AL HACER HOVER*/
+    .cajaOcultaSesion a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+
+    /* APARICION DE LAS CAJAS DE INICIO Y REGISTRO HACIENDO EL HOVER TANTO EN ELLAS MISMAS COMO EN LA IMAGEN */
+    .iconoSesion:hover .cajaOcultaSesion{
+        visibility: visible;
+        opacity: 100%;
+        transition: 0.9s;
+    }
+
+/*----------------------------------------------*/
+
+
+/* IMAGENES GRANDES Y TÍTULO DE PRESENTACION */
+    .img_grande {
+        width: 170vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .tituloXiaomi{
+        font-family: Titulos;
+        position: absolute;
+        font-size: 150px;
+        top: 50%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -50%);
+        -webkit-text-stroke: 3px black;
+    }
+
+    .img_grande2{
+        width: 140vw;
+        height: 100vh;
+    }
+
+    .tituloRedmi{
+        font-family: Titulos;
+        position: absolute;
+        font-size: 150px;
+        top: 350%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+    .img_grande3{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .tituloPoco{
+        font-family: Titulos;
+        position: absolute;
+        font-size: 150px;
+        top: 635%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+/*-------------------------------------------------*/
+
+
+/* GALERIA DE MOVILES*/
+
+    /* CAJA QUE CONTIENE TODAS LAS TARJETAS DE TELEFONOS */
+    .contenedor_telefonos{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 95vh;
+    }
+
+    /* CONTENEDOR DE LA TARJETA */
+    .telefono{
+        background-color: #f4f4f4;
+        margin: auto; /* top right botom left*/
+        border-radius: 20px;
+        -webkit-transition: padding .5s;
+        width: 20vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* EFECTO HOVER SOBRE LAS TARJETAS*/
+    .telefono:hover{
+        padding: 30px;
+        -webkit-box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+        box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+        transition: 0.5s;
+        max-width: 85vh;
+    }
+
+    /* IMAGENES DE LOS TELEFONOS */
+    .telefono img{
+        width: 100%;
+        height: 50%;
+    }
+
+    /* NOMBRE DEL MOVIL */
+    .titulomovil{
+        font-family: Titulos;
+        font-size: 40px;
+        height: 15%;
+        margin: 1px;
+        text-align: center;
+    }
+
+    /* DATOS DEL MOVIL*/
+    .decripcionmovil{
+        font-family: Textos;
+        margin: 5px;
+        height: 10%;
+        text-align: center;
+    }
+
+    /* PRECIO MOVIL */
+    .preciomovil{
+        font-family: Textos;
+        margin-top: 1px;
+        font-size: 40px;
+        height: 10%;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* CAJA CONTENEDORA DE LOS BOTONES DE COMPRAR E INFORMACIÓN */
+    .botonesMoviles{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    /* ENLACE / BOTONES*/
+    .botonesMoviles a{
+        font-family: Textos;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 300%;
+        font-size: 15px;
+        border-radius: 50px 50px 50px 50px;
+        padding: auto;
+    }
+
+    /* BOTON COMPRAR */
+    .comprar{
+        margin: 10px;
+        width: 50%;
+    }
+
+    .comprar a{
+        background-color: black;
+        color: white;
+    }
+
+    .comprar a:hover{
+        background-color: #333333;
+    }
+
+    /* BOTON INFORMACION*/
+    .informacion{
+        margin: 10px;
+        width: 50%;
+    }
+
+    .informacion a{
+        border: 1px black solid;
+        color: black;
+    }
+
+    .informacion a:hover{
+        border: 1px gray solid;
+        color: gray;
+    }
+
+/*---------------------------------*/
+
+/* PIE DE PAGINA */
+    .pie_de_pagina{
+        width: 100vw;
+        height: 100%;
+        background-color: #333;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: lightgrey;
+    }
+
+    .datosEmpresa{
+        margin: 10px;
+    }
+
+    .infoContacto{
+        font-weight: bold;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .tituloDatosEmpresa{
+        font-weight: bold;
+    }
+    .redes{
+        margin: 20px;
+        flex-grow: 1;
+    }
+    .redes img{
+        width: 30px;
+        height: 30px;   
+    }
+
+    .redes a{
+        margin: 5px;
+    }
+
+    .volver a{
+        padding: 20px;
+        margin: 50px;
+        color: white;
+    }
+    .derechaPie{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+    /*Contenedores de cada apartado*/
+
+    .movil{
+        background-color: white;
+        position: relative;
+        display: inline-block;
+        flex-direction:row-reverse;
+        align-items: center;
+        margin: 0;
+    }
+
+    .textoMovil {
+        position: absolute;
+        top: 40%;
+        left: 60%;
+    }
+
+    .imagenMovil{
+        text-align: center;
+        z-index: 1;
+    }
+
+    .movil h1{
+        font-size: 90px;
+        margin: auto;
+        background-color: transparent;
+        color: #000;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .procesador {
+        background-color: #000;
+        width: 100vw;
+        padding: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .textoProcesador {
+        padding: 5%;
+        width: 30%;
+        height: 100%;
+    }
+
+    .imagenProcesador {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .camara {
+        background-color: black;
+        width: 100vw;
+        padding: 100px;
+        padding-bottom: 200px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .textoCamara {
+        padding: 5%;
+        width: 30%;
+        height: 100%;
+        color: white;
+    }
+
+    .camara h1{ 
+        font-size: 50px;
+        color: white;
+        background-color: transparent;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .imagenCamara{
+        width: 80vh;
+    }
+
+    .pantalla{
+        background-color: black;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+
+    .textoPantalla{
+        text-align: center;
+        padding-bottom: 5%;
+        width: 50%;
+    }
+
+    .imagenPantalla{
+        display: flex;
+        justify-content: center;
+    }
+
+    .bateria {
+        background-color: white;
+        width: 100vw;
+        padding: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+
+    }
+    
+    .textoBateria {
+        padding: 5%;
+        width: 30%;
+        height: 100%;
+        color: black;
+    }
+
+    .bateria h1{ 
+        font-size: 50px;
+        color: black;
+        background-color: transparent;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .imagenBateria{
+        width: 80vh;
+    }
+
+    /*Ajustes de las imagenes*/
+
+    #Iphone {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #Chip {
+        width: 110%;
+        height: 110%;
+    }
+
+    #Camara {
+        width: 700px;
+        height: 1000px;
+    }
+
+    #Bateria {
+        width: 50%;
+        height: 50%;
+    }
+
+    #Pantalla {
+        width: 50%;
+        height: 50%;
+    }
+
+    /*Titulos de cada apartado*/
+
+    h1.tipo1 {
+        font-size: 50px;
+        color: white;
+        background-color: transparent;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /*Texto de cada apartado*/
+
+    p.eslogan {
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    p.tipo1_subtitulo {
+        color: white;
+    }
+
+    p.tipo2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 10px;
+        font-size: 150%;
+
+    }
+
+    p.tipo1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 10px;
+        color: white;
+        font-size: 20px;
+
+    }
+
+    p.precio {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: grey;
+        font-size: 150%;
+        margin: auto;
+    }
+
+    /*Boton de comprar*/
+
+    button.comprar {
+        transition: all 0.2s ease-in-out;
+        background-color: darkgray;
+        border-color: rgb(194, 190, 190);
+        margin-top: 20px;
+        border-radius: 15px;
+        padding: 5px;
+        border: none;
+        padding: 10px;
+    }
+
+    button.comprar:hover {
+        transform: scale(1.2);
+        background-color: orange;
+        border-color: rgb(194, 190, 190);
+        color: wheat;
+        margin-top: 20px;
+        border-radius: 15px;
+        padding: 5px;
+        border: none;
+        padding: 10px;
+    }
+    /*Boton sticky de volver*/
+
+    .btn-flotante {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        background-color: #555;
+        padding: 18px 30px;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        transition: all 300ms ease 0ms;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+    }
+
+    .btn-flotante:hover {
+        background-color: orange;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+        transform: translateY(-7px);
+    }
+
+    /*Listas*/
+
+    ul {
+        list-style: none;
+    }
+    
+    .bodyForm{
+        background-color: black;
+    }
+
+    .formContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form{
+        background-color: gray;
+        height: 75vh;
+        width: 30vw;
+        padding: 20px;
+        border-radius: 5px 5px 5px 5px;
+        margin-top: 5%;
+    }
+    
+    .cabeceraForm{
+        font-family: Titulos;
+        width: 100vw;
+        top: 0;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        background-color: black;
+        height: 70px;
+    }
+
+    .enlacesCabeceraForm{
+        display: flex;
+
+    }
+
+    .enlaceCabeceraForm{
+        padding: 20px;
+        
+    }
+
+    .enlaceCabeceraForm a{
+        color: gray;
+    }
+
+    .xiaomiAccount{
+        flex-grow: 2;
+        font-size: 40px;
+        color: white;
+    }
+
+    .obligatorio{
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .textosForm{
+        display: flex;
+        flex-direction: column;
+    }
+    .inputForm{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textosForm label{
+        margin: 3px;
+    }
+
+    .inputForm input{
+        margin: 2px;
+        border-radius: 5px 5px 5px 5px;
+    }
+    .noObligatorio{
+        margin: 5px;
+        height: 30%;
+    }
+
+
+    .checks{
+        margin: 20px;
+    }
+    .botonesForm{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+    }
+
+    .botonesForm input{
+        height: 50px;
+        width: 150px;
+        background-color: orange;
+        color: white;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    .contactoForm{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactoForm div{
+        margin: 10px;
+    }

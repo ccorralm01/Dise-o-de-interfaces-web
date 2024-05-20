@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -2;
+        }
+
+        img{
+            width: 400px;
+            height: 500px;
+        }
+        .contenido{
+            position: absolute;
+            z-index: 2;
+            height: 100%;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .texto1{
+            font-size: 40px;
+            margin-bottom: 20px;   
+        }
+
+        .linea{
+            background-color: gold;
+            height: 2px;
+            width: 100px;
+            transition: all 0.5s ease;
+        }
+        
+        .texto2{
+            text-align: center;
+            padding-top: 20px;
+            font-size: 20px;
+        }
+
+        .texto3{
+            text-align: center;
+            width: 70%;
+            padding-top: 50px;
+        }
+
+        .boton{
+            margin-top: 20px;
+        }
+
+        .top{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: all 0.5s ease;          
+        }
+
+        .bot{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            top: 300px;
+            transition: all 1s ease;
+        }
+
+        .container:hover .contenido{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .container:hover .linea{
+            width: 200px;
+        }
+
+        .container:hover .texto2{
+            width: 200px;
+        }
+
+        .container:hover .top{
+            transform: translateY(-90px);
+        }
+        .container:hover .bot{
+            transform: translateY(-100px);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://picsum.photos/id/961/600/400" alt="">
+        <div class="contenido">
+            <div class="top">
+            <div class="texto1">10 mountains</div>
+            <div class="linea"></div>
+            <div class="texto2">Inspiration</div>
+            </div>
+            <div class="bot">
+            <div class="texto3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut harum ipsam impedit, quis similique magni adipisci sapiente aspernatur modi illo dolore ea labore fuga porro nihil architecto illum ullam quasi...</div>
+            <button class="boton">Read Article</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

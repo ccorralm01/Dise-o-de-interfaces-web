@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            
+        }
+
+        header{
+            width: 100vw;
+            height: 15vh;
+            background-color: pink;
+        }
+
+        nav{
+            width: 20vw;
+            height: 100vh;
+            background-color: teal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section{
+            height: 100vh;
+            width: 60vw;
+            background-color: teal;
+            margin-right: 1%;
+            margin-left: 1%;
+        }
+
+        aside{
+            height: 100vh;
+            width: 20vw;
+            background-color: teal;
+            margin-right: 1%;
+        }
+
+        footer{
+            width: 100vw;
+            height: 15vh;
+            background-color: pink;
+        }
+        @media screen and (max-width:640px){
+        .menu{
+            background-color: blue;
+            padding: 10px;
+            font-size: 1em;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <div class="container">
+        <nav><h1>Nav</h1></nav>
+        <section class="main">
+            <h1>Main</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugit voluptatibus iste eius, recusandae excepturi nisi veritatis aliquid numquam amet atque consequatur quidem sit, facere tenetur provident, esse tempore repellendus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugit voluptatibus iste eius, recusandae excepturi nisi veritatis aliquid numquam amet atque consequatur quidem sit, facere tenetur provident, esse tempore repellendus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugit voluptatibus iste eius, recusandae excepturi nisi veritatis aliquid numquam amet atque consequatur quidem sit, facere tenetur provident, esse tempore repellendus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugit voluptatibus iste eius, recusandae excepturi nisi veritatis aliquid numquam amet atque consequatur quidem sit, facere tenetur provident, esse tempore repellendus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugit voluptatibus iste eius, recusandae excepturi nisi veritatis aliquid numquam amet atque consequatur quidem sit, facere tenetur provident, esse tempore repellendus.</p>
+        </section>
+        <aside>
+            <h1>Aside</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque exercitationem doloremque, vitae nostrum, deleniti esse aspernatur perspiciatis ullam numquam doloribus sint, facere magnam molestiae nemo dolorem aliquam asperiores quae minus.</p>
+        </aside>
+    </div>
+    <div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

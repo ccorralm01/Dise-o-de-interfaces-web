@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cajita:hover{
+            background-color: black;
+        }
+        #cajita:focus{
+            background-color: green;
+        }
+        #cajita:active {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <input id="cajita" type="text" placeholder="cajita"/>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color: yellowgreen;
+        }
+        li:hover{
+            font-size: 25px;
+            cursor: pointer;
+        }
+        #lista1 li:nth-child(odd){
+            background-color: grey;
+        }
+        #lista1 li:nth-child(even){
+            background-color: aqua;
+        }
+        #p1::first-line{
+            color: steelblue;
+        }
+        #p1::first-letter{
+            font-size: 40px;
+        }
+        #p1::after{
+            content: "- ok -";
+            color: pink;
+            font-size: 35px;
+        }
+        #p1::before{
+            content: "\201C";
+            color: pink;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <ol id="lista1">
+       <li>uno</li>
+       <li>dos</li>
+       <li>tres</li>
+    </ol>
+    <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem molestiae incidunt qui ducimus tempora et animi quaerat quidem! Debitis iste optio voluptas earum eligendi temporibus voluptatibus. Iusto aspernatur architecto quod!</p>
+</body>
+</html>

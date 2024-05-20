@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Examen César E. Corral Menéndez</title>
+    <style>
+        @font-face {
+            font-family: fuente;
+            src: url(fonts/fontTitulo1.ttf);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url("imágenes/bloque1-img1.jpg");
+            background-size: 100%;
+            background-position: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .contenedorGrande{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .contenedorArriba{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .texto1{
+            font-family: fuente;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .texto2{
+            font-size: 20px;
+            font-family: fuente;
+        }
+
+        .contenedorAbajo{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .circulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 250px;
+            width: 250px;
+            border-radius: 100%;
+            border: 2px solid rgb(100,150,150);
+            background-color: rgb(255, 255, 255, 0.5);
+        }
+
+        .circulo1 div{
+            font-family: fuente;
+            margin-bottom: 20px;
+        }
+        .circulo2 div{
+            font-family: fuente;
+            margin-bottom: 20px;
+        }
+        .circulo3 div{
+            font-family: fuente;
+            margin-bottom: 20px;
+        }
+
+        .circulo:hover{
+            opacity: 100%;
+            background-color: rgb(200,220,220);
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedorGrande">
+        <div class="contenedorArriba">
+            <div class="texto1">INNOVATE FINANCIAL SOLUTIONS</div>
+            <div class="texto2">FOR BUSINESS OWNERS & PROFESSIONALS</div>
+        </div>
+        <div class="contenedorAbajo">
+
+            <div class="circulo1 circulo">
+                    <div>GAIN UNDERSTANDING</div>
+                    <img src="imágenes/bloque1-icono1.png" alt="">
+            </div>
+
+            <div class="circulo2 circulo">
+                    <div>CREATE SOLUTIONS</div>
+                    <img src="imágenes/bloque1-icono2.png" alt="">
+            </div>
+
+            <div class="circulo3 circulo">
+                    <div>DELIVER RESULTS</div>
+                    <img src="imágenes/bloque1-icono3.png" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

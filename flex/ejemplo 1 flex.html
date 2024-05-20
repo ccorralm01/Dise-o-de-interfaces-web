@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo 1</title>
+    <style>
+        .container1{
+            background-color: seagreen;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .container1 .item, .container2 .item, .container3 .item{
+            background-color: white;
+            border: 1px solid black;
+            font-size: 50px;
+            /* margin: 20px; */
+            padding: 30px;
+        }
+
+        .container2{
+            background-color: seagreen;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: stretch;
+        }
+
+        .container3{
+            background-color: seagreen;
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            column-gap: 20px;
+        }
+        #item3{
+            align-self: flex-start;
+        }
+
+        .container3 .item{
+            /* flex-basis: 50px;
+            flex-grow: 1; */
+            flex: 0 1 10%;
+            transition: all 0.5s;
+        }
+        .container3 .item:hover{
+            flex: 1 1 10%;
+            background-color: indigo;
+        }
+        /*
+        .container3 #item4{
+            flex-grow: 2;
+        } */
+
+        .container3 #item3{
+            order: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Container 1</h2>
+    <div class="container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h2>Container 2 - aling-content</h2>
+    <div class="container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h2>Container 3 - aling-items</h2>
+    <div class="container3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

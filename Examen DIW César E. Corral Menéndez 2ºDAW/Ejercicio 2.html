@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Examen César E. Corral Menéndez</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #e5f89e;
+        }
+
+        .cajaBlanca{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            height: 75%;
+            width: 40%;
+            border-radius: 10px;
+            display: flex;
+        }
+
+        .parteIzquierda{
+            width: 50%;
+            height: 100%;
+        }
+
+        .manzanaVerde{
+            position: absolute;
+            background-color: #96e001;
+            width: 47%;
+            height: 70%;
+            top: 5%;
+            left: -5%;
+            border-radius: 10px 10px 0px 0px;
+            -webkit-box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+            box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+        }
+
+        .manzanaVerde img{
+            width: 100%;
+            margin-top: 20%;
+        }
+
+        .manzanitasIzq{
+            position: absolute;
+            background-color: white;
+            width: 47%;
+            height: 15%;
+            top: 72%;
+            left: -5%;
+            border-radius: 0px 0px 10px 10px;
+            -webkit-box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+            box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .manzanitasIzq img{
+            width: 50px;
+            height: 50px;
+        }
+
+        .parteDerecha{
+            width: 50%;
+            height: 100%;
+            margin-top: 5%;
+        }
+
+        .titulo{
+            font-family: sans-serif;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .cod{
+            color: #a6a6a6;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+
+        .precio{
+            font-size: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: #ff3f40;
+            font-family: sans-serif;
+        }
+
+        .color{
+            font-size: 15px;
+            color: #a6a6a6;
+            font-family: sans-serif;
+        }
+
+        .imagenesManzanitas{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            width: 90%;
+            justify-content: space-around;
+        }
+
+        .imagenesManzanitas img{
+            width: 40px;
+            height: 40px;
+        }
+
+        .imagen1manzanas{
+            border: 1px dotted #a6a6a6;
+        }
+
+        .beneficio{
+            color: #a6a6a6;
+            font-size: 13px;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+        }
+        .lista{
+            font-family: sans-serif;
+            margin-left: 40px;
+            font-size: 10px;
+        }
+        .lista ul{
+            list-style: square;
+        }
+        li{
+            margin-bottom: 5px;
+        }
+
+        .boton{
+            margin-top: 35px;
+            height: 60px;
+            width: 150px;
+            border-radius: 10px;
+            background-color: #ff3f40;
+            border: 0;
+            color: white;
+            -webkit-box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+            box-shadow: 11px 12px 21px 0px rgba(0,0,0,0.75);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cajaBlanca">
+        <div class="parteIzquierda">
+            <div class="manzanaVerde"><img src="imágenes/manzana1.png" alt=""></div>
+            <div class="manzanitasIzq">
+                <img src="imágenes/manzanapeq1.png" alt="">
+                <img src="imágenes/manzanapeq2.png" alt="">
+                <img src="imágenes/manzanapeq3.png" alt="">
+                <img src="imágenes/manzanapeq4.png" alt="">
+            </div>
+        </div>
+        <div class="parteDerecha">
+            <div class="titulo">Delicious Apples</div>
+            <div class="cod">COD: 45999</div>
+            <div class="precio">$ 7.93</div>
+            <div class="color">SELECT A COLOR</div>
+            <div class="imagenesManzanitas">
+                <img class="imagen1manzanas" src="imágenes/manzanapeq1.png" alt="">
+                <img src="imágenes/manzanaamarilla.png" alt="">
+                <img src="imágenes/manzananaranja.png" alt="">
+                <img src="imágenes/manzanaroja.png" alt="">
+            </div>
+            <div class="beneficio">BENEFIT</div>
+            <div class="lista">
+                <ul>
+                    <li>Apples are nutricious</li>
+                    <li>Apples may be good for weight loss</li>
+                    <li>Apples may be good for bone health</li>
+                    <li>They're linked to a lowest risk of diabetes</li>
+                </ul>
+            </div>
+            <button class="boton">ADD TO CART</button>
+        </div>
+    </div>
+</body>
+</html>

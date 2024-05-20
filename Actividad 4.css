@@ -1,0 +1,17 @@
+div{
+    width: 300px;
+    color: white;
+    display: inline-block;
+}p{
+    margin: 0px;
+    padding: 3px;
+}
+
+.marca{
+    background-color: rgb(10, 18, 138);
+    border-bottom: 1px dotted white;
+}
+.descripcion{
+    background-color: blue;
+    height: 300px;
+}

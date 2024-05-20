@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menucentrado{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+            
+        }
+        
+        a{
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .e{
+            position: relative;
+            padding: 5px;
+        }
+
+
+        .enlace1 .linea1{
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            transition: all 0.4s ease;
+        }
+
+        .enlace1:hover .linea1{
+            width: 100%;
+            height: 2px;
+        }
+
+
+        .enlace2 .linea2{
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            bottom: 0;
+            right: 0;
+            background-color: black;
+            transition: all 0.4s ease;
+        }
+
+        .enlace2:hover .linea2{
+            width: 100%;
+            height: 2px;
+        }
+
+
+        .enlace3 .linea3{
+            position: absolute;
+            width: 2px;
+            height: 0px;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            transition: all 0.4s ease;
+        }
+
+        .enlace3:hover .linea3{
+            width: 2px;
+            height: 100%;
+        }
+
+
+
+        .enlace4 .linea4{
+            position: absolute;
+            width: 2px;
+            height: 0px;
+            bottom: 0;
+            right: 0;
+            background-color: black;
+            transition: all 0.4s ease;
+        }
+
+        .enlace4:hover .linea4{
+            width: 2px;
+            height: 100%;
+        }
+
+
+        
+        .enlace5 .linea5{
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            bottom: 0;
+            right: 0;
+            background-color: black;
+            transition: all 0.4s ease;
+        }
+
+        .enlace5:hover .linea5{
+            width: 100%;
+            height: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menucentrado">
+        <div class="enlace1 e"><a href="">Enlace1</a><div class="linea1"></div></div>
+        <div class="enlace2 e"><a href="">Enlace2</a><div class="linea2"></div></div>
+        <div class="enlace3 e"><a href="">Enlace3</a><div class="linea3"></div></div>
+        <div class="enlace4 e"><a href="">Enlace4</a><div class="linea4"></div></div>
+        <div class="enlace5 e"><a href="">Enlace5</a><div class="linea5"></div></div>
+    </ul>   
+</body>
+</html>

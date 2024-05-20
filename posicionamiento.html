@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #contenedor{
+            width: 600px;
+            border: 2px black solid;
+        }
+        .capa1, .capa2, .capa3, .capa4, .capa5{
+            width: 400px;
+            height: 200px;
+        }
+        .capa1{
+            background-color: aqua;
+            position: static;
+        }
+        .capa2{
+            background-color: blueviolet;
+            position: relative;
+            top: 20px;
+            left: 40px;
+        }
+        .capa3{
+            background-color: coral;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+        }
+        .capa4{
+            background-color: deeppink;
+        }
+        .capa5{
+            background-color: springgreen;
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div class="capa1">capa1</div>
+        <div class="capa2">capa2</div>
+        <div class="capa3">capa3</div>
+        <div class="capa4">capa4</div>
+        <div class="capa5">capa5</div>
+    </div>
+</body>
+</html>
